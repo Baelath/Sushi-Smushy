@@ -33,6 +33,9 @@ public class Demo : MonoBehaviour
             if (Input.GetKeyDown(data.changeObjKey))
                 NextObject(data);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
         #endregion
     }
 

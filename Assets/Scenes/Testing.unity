@@ -5917,7 +5917,6 @@ GameObject:
   - component: {fileID: 1447675941}
   - component: {fileID: 1447675940}
   - component: {fileID: 1447675939}
-  - component: {fileID: 1447675942}
   - component: {fileID: 1447675943}
   m_Layer: 0
   m_Name: State Machine Player
@@ -5991,20 +5990,6 @@ Transform:
   m_Father: {fileID: 1303208355}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1447675942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447675937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986ed5ecdcbafd14a95a9b438bf09663, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugCanvas: {fileID: 1090668652}
-  playerStateText: {fileID: 2112816252}
 --- !u!114 &1447675943
 MonoBehaviour:
   m_ObjectHideFlags: 0
