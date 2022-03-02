@@ -12,35 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a877d0a61ac8e64a9aed1c68cfdc5fd, type: 3}
   m_Name: Test 1
   m_EditorClassIdentifier: 
-  gravityScale: 0
-  fallGravityMult: 0
-  quickFallGravityMult: 0
-  dragAmount: 0
-  frictionAmount: 0
-  coyoteTime: 0
-  runMaxSpeed: 0
-  runAccel: 0
-  runDeccel: 0
-  accelInAir: 0
-  deccelInAir: 0
-  accelPower: 0
-  stopPower: 0
-  turnPower: 0
-  jumpForce: 0
-  jumpCutMultiplier: 0
-  jumpBufferTime: 0
-  wallJumpForce: {x: 0, y: 0}
-  wallJumpRunLerp: 0
-  wallJumpTime: 0
-  slideAccel: 0
-  slidePower: 0
-  dashAmount: 0
-  dashSpeed: 0
-  dashAttackTime: 0
-  dashAttackDragAmount: 0
-  dashEndTime: 0
-  dashUpEndMult: 0
-  dashEndRunLerp: 0
-  dashBufferTime: 0
+  gravityScale: 1.1
+  fallGravityMult: 1.35
+  quickFallGravityMult: 2.2
+  dragAmount: 0.22
+  frictionAmount: 0.55
+  coyoteTime: 0.2
+  runMaxSpeed: 9.5
+  runAccel: 9.3
+  runDeccel: 15
+  accelInAir: 0.65
+  deccelInAir: 0.65
+  accelPower: 1.05
+  stopPower: 1.23
+  turnPower: 1.13
+  jumpForce: 16
+  jumpCutMultiplier: 0.5
+  jumpBufferTime: 0.08
+  wallJumpForce: {x: 9, y: 12}
+  wallJumpRunLerp: 0.3
+  wallJumpTime: 0.35
+  slideAccel: 0.8
+  slidePower: 0.8
+  dashAmount: 1
+  dashSpeed: 17
+  dashAttackTime: 0.15
+  dashAttackDragAmount: 0.22
+  dashEndTime: 0.1
+  dashUpEndMult: 0.6
+  dashEndRunLerp: 0.3
+  dashBufferTime: 0.05
   doKeepRunMomentum: 0
   doTurnOnWallJump: 0

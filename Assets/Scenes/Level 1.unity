@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f05384088565354f9b44cf852667ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: d974a7ea26c120b4382e82a04122f961, type: 2}
+  data: {fileID: 11400000, guid: a577205addb64c14a9c243d460531830, type: 2}
   _groundCheckPoint: {fileID: 333623059}
   _groundCheckSize: {x: 0.5, y: 0.01}
   _frontWallCheckPoint: {fileID: 1409148620}
