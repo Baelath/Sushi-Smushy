@@ -324,6 +324,7 @@ public class PlayerAdvanced : MonoBehaviour
 			force -= RB.velocity.y;
 
 		RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+		SoundManager.PlaySound(SoundManager.Sound.PlayerJump);
 		#endregion
 	}
 
@@ -346,6 +347,7 @@ public class PlayerAdvanced : MonoBehaviour
 			force.y -= RB.velocity.y;
 
 		RB.AddForce(force, ForceMode2D.Impulse);
+		SoundManager.PlaySound(SoundManager.Sound.PlayerJump);
 		#endregion
 	}
 

@@ -8,28 +8,7 @@ public static class SoundManager
     // todo: Add all sound triggers...
     public enum Sound
     {
-        PlayerAttack1,
-        PlayerAttack2,
-        PlayerAttack3,
-        PlayerDamaged,
-        PlayerJump,
-        PlayerDeath,
-        ButtonClicked,
-        ButtonHovered,
-        Level1,
-        Level2,
-        Level3,
-        LevelChange,
-        CraftItem,
-        EquipItem,
-        PickupItem,
-        DrinkPotion,
-        ThrowPotion,
-        EnemyDeath,
-        Level1b,
-        Level2b,
-        Level3b,
-        MainMenu
+        PlayerJump
     }
 
     private static Dictionary<Sound, float> soundTimerDictionary;

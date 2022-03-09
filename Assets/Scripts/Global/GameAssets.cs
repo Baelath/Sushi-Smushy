@@ -16,7 +16,7 @@ public class GameAssets : MonoBehaviour
         }
     }
 
-    public GameObject playerPrefab;
+    //public GameObject playerPrefab;
     public SoundClip[] soundClipArray;
 
     public int GetRandomPercent()
