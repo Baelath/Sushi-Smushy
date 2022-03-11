@@ -6,6 +6,7 @@ public class PlayerAdvanced : MonoBehaviour
 
     #region COMPONENTS
     public Rigidbody2D RB { get; private set; }
+	private Animator anim;
     #endregion
 
     #region STATE PARAMETERS
@@ -26,6 +27,10 @@ public class PlayerAdvanced : MonoBehaviour
 	private float _dashStartTime;
 	private Vector2 _lastDashDir;
 	private bool _dashAttacking;
+
+	//temp animator states
+	private enum AnimatorStates { idle, running, jump, falling };
+	private AnimatorStates state;
 	#endregion
 
 	#region INPUT PARAMETERS
@@ -63,6 +68,8 @@ public class PlayerAdvanced : MonoBehaviour
 
         SetGravityScale(data.gravityScale);
 		IsFacingRight = true;
+
+		anim = GetComponent<Animator>();
 	}
 
 	private void Update()
@@ -217,6 +224,17 @@ public class PlayerAdvanced : MonoBehaviour
             }
 		}
         #endregion
+
+		if (RB.velocity.y > 0.1f)
+        {
+			state = AnimatorStates.jump;
+			anim.SetInteger("state", (int)state);
+		}
+		else if (RB.velocity.y < -0.1f)
+        {
+			state = AnimatorStates.falling;
+			anim.SetInteger("state", (int)state);
+		}
     }
 
     #region INPUT CALLBACKS
@@ -300,7 +318,16 @@ public class PlayerAdvanced : MonoBehaviour
 		RB.AddForce(movement * Vector2.right); // applies force force to rigidbody, multiplying by Vector2.right so that it only affects X axis 
 
 		if (InputHandler.instance.MoveInput.x != 0)
+		{
 			CheckDirectionToFace(InputHandler.instance.MoveInput.x > 0);
+			state = AnimatorStates.running;
+			anim.SetInteger("state", (int)state);
+		}
+		else
+        {
+			state = AnimatorStates.idle;
+			anim.SetInteger("state", (int)state);
+        }
 	}
 
 	private void Turn()
