@@ -26,10 +26,10 @@ MonoBehaviour:
   accelPower: 1.05
   stopPower: 1.23
   turnPower: 1.13
-  jumpForce: 12
+  jumpForce: 14
   jumpCutMultiplier: 0.5
   jumpBufferTime: 0.08
-  wallJumpForce: {x: 9, y: 12}
+  wallJumpForce: {x: 5, y: 14}
   wallJumpRunLerp: 0.3
   wallJumpTime: 0.35
   slideAccel: 0.8
