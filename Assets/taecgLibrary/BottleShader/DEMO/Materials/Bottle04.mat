@@ -38,7 +38,7 @@ Material:
     - _Float0: 0.05
     - _Float1: 0.05
     - _Float2: 0.13
-    - _GrowUp: 0.72
+    - _GrowUp: 0.37399498
     - _NoiseDistortion: 0.067
     - _NoiseIntensity: 1.01
     - __dirty: 1
