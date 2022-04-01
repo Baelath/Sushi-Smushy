@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Konstantinos/Testing.unity
-    guid: 9b511485c8b5ee046a965b9ffef2d92a
   - enabled: 1
-    path: Assets/Scenes/Konstantinos/Build 11.03.unity
-    guid: e5f6cce21b87de24ca2d3248dbb1d0da
+    path: Assets/Scenes/Konstantinos/Main Menu.unity
+    guid: a7a04e077a4971f4ca5cb2731f58f99b
+  - enabled: 1
+    path: Assets/Scenes/Konstantinos/showcase.unity
+    guid: 20f23f145c8e0fb48aeb97c8141a7c46
   m_configObjects: {}
