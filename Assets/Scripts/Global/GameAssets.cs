@@ -38,7 +38,7 @@ public class GameAssets : MonoBehaviour
 
         TimeTickSystem.OnTick += delegate (object sender, TimeTickSystem.OnTickEventArgs e)
         {
-            Debug.Log(e.eventTick);
+            //Debug.Log(e.eventTick);
         };
     }
 }
