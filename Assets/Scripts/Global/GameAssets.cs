@@ -35,5 +35,10 @@ public class GameAssets : MonoBehaviour
     private void Start()
     {
         SoundManager.Initialize();
+
+        TimeTickSystem.OnTick += delegate (object sender, TimeTickSystem.OnTickEventArgs e)
+        {
+            Debug.Log(e.eventTick);
+        };
     }
 }

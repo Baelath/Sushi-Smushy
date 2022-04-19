@@ -7,6 +7,7 @@ public class PlayerAdvanced : MonoBehaviour
     #region COMPONENTS
     public Rigidbody2D RB { get; private set; }
 	private Animator anim;
+	private ParticleSystem dust;
     #endregion
 
     #region STATE PARAMETERS
@@ -70,6 +71,7 @@ public class PlayerAdvanced : MonoBehaviour
 		IsFacingRight = true;
 
 		anim = GetComponent<Animator>();
+		dust = GetComponentInChildren<ParticleSystem>();
 	}
 
 	private void Update()
@@ -336,6 +338,8 @@ public class PlayerAdvanced : MonoBehaviour
 		scale.x *= -1;
 		transform.localScale = scale;
 
+		CreateDust();
+
 		IsFacingRight = !IsFacingRight;
 	}
 
@@ -344,6 +348,8 @@ public class PlayerAdvanced : MonoBehaviour
 		//ensures we can't call a jump multiple times from one press
 		LastPressedJumpTime = 0;
 		LastOnGroundTime = 0;
+
+		CreateDust();
 
 		#region Perform Jump
 		float force = data.jumpForce;
@@ -372,6 +378,8 @@ public class PlayerAdvanced : MonoBehaviour
 
 		if (RB.velocity.y < 0) //checks whether player is falling, if so we subtract the velocity.y (counteracting force of gravity). This ensures the player always reaches our desired jump force or greater
 			force.y -= RB.velocity.y;
+
+		CreateDust();
 
 		RB.AddForce(force, ForceMode2D.Impulse);
 		SoundManager.PlaySound(SoundManager.Sound.PlayerJump);
@@ -459,4 +467,9 @@ public class PlayerAdvanced : MonoBehaviour
 		return IsDashing && Time.time - _dashStartTime > data.dashAttackTime;
 	}
 	#endregion
+
+	private void CreateDust()
+    {
+		dust.Play();
+    }
 }
