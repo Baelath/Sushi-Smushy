@@ -470,6 +470,7 @@ public class PlayerAdvanced : MonoBehaviour
 
 	private void CreateDust()
     {
-		dust.Play();
+		if (!IsJumping || !IsWallJumping)
+			dust.Play();
     }
 }
