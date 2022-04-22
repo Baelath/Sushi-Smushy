@@ -5,13 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Konstantinos/Main Menu.unity
-    guid: a7a04e077a4971f4ca5cb2731f58f99b
+    path: Assets/Scenes/Jake A levels/Fridge 1.unity
+    guid: cd6ae241e60e1054baf0f93b160291b1
   - enabled: 1
-    path: Assets/Scenes/Konstantinos/showcase.unity
-    guid: 20f23f145c8e0fb48aeb97c8141a7c46
+    path: Assets/Scenes/Jake A levels/Fridge 2.unity
+    guid: 151c1a9b49537df45b5e482d54cd77bb
+  - enabled: 1
+    path: Assets/Scenes/Mark_Levels/Mark_Level1.unity
+    guid: 562ab73b1112ea14daf0228d56c7ff6b
+  - enabled: 1
+    path: Assets/Scenes/Mark_Levels/Mark_Level2.unity
+    guid: 2a2ebc23f9f13df40b5ecc6bafc685e2
+  - enabled: 1
+    path: Assets/Scenes/Mark_Levels/Mark_Level_4.unity
+    guid: 8369e45f22f9dbe49b001a60f3ebb6af
+  - enabled: 1
+    path: Assets/Scenes/JakeS-Levels/JS-Level-test.unity
+    guid: b64181a3782dcad47b0f223fbbf92aa5
+  - enabled: 1
+    path: Assets/Scenes/JakeS-Levels/JakeS - level for testing.unity
+    guid: 87771609ea2116e4ea56b5ca90f8049a
   m_configObjects: {}

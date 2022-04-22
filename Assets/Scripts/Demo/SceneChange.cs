@@ -33,12 +33,12 @@ public class SceneChange : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene(Mathf.Min(SceneManager.GetActiveScene().buildIndex + 1,scenes - 1));
+            SceneManager.LoadScene(Mathf.Clamp(SceneManager.GetActiveScene().buildIndex - 1, 0, scenes));
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            SceneManager.LoadScene(Mathf.Max(SceneManager.GetActiveScene().buildIndex - 1, 0));
+            SceneManager.LoadScene(Mathf.Clamp(SceneManager.GetActiveScene().buildIndex + 1, 0, scenes));
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

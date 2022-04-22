@@ -273,7 +273,7 @@ public class PlayerAdvanced : MonoBehaviour
 		force.x *= Mathf.Sign(RB.velocity.x); //finds direction to apply force
 		force.y *= Mathf.Sign(RB.velocity.y);
 
-		RB.AddForce(-force, ForceMode2D.Impulse); //applies force against movement direction
+		RB.AddForce(-force, ForceMode2D.Impulse);
 	}
 
 	private void Run(float lerpAmount)
