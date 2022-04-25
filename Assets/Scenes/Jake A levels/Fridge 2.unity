@@ -242,7 +242,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.6447964, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.665
+  m_FalloffIntensity: 0.642
   m_Color: {r: 1, g: 0.97337824, b: 0.6179246, a: 1}
   m_Intensity: 0.8
   m_LightVolumeIntensity: 1
@@ -639,10 +639,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 108.34578
+  m_PointLightInnerAngle: 77.52862
   m_PointLightOuterAngle: 180.55
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 58.71558
+  m_PointLightOuterRadius: 36.55
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
