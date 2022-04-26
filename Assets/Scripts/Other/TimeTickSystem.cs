@@ -31,8 +31,7 @@ public class TimeTickSystem : MonoBehaviour
             tickTimer -= TICK_TIMER_MAX;
             tick++;
 
-            if (OnTick != null)
-                OnTick(this, new OnTickEventArgs { eventTick = tick });
+            OnTick?.Invoke(this, new OnTickEventArgs { eventTick = tick });
         }
     }
 }

@@ -172,8 +172,8 @@ TextureImporter:
         serializedVersion: 2
         x: 768
         y: 0
-        width: 512
-        height: 256
+        width: 522
+        height: 246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,7 +193,7 @@ TextureImporter:
         serializedVersion: 2
         x: 768
         y: 256
-        width: 512
+        width: 522
         height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -212,7 +212,7 @@ TextureImporter:
       name: kitchen-set3 deco_7
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1290
         y: 256
         width: 512
         height: 256
@@ -233,10 +233,10 @@ TextureImporter:
       name: kitchen-set3 deco_8
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1290
         y: 0
         width: 512
-        height: 256
+        height: 246
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
