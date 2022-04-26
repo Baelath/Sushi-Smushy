@@ -240,7 +240,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.97155225, b: 0.6933962, a: 1}
+  m_Color: {r: 1, g: 0.77040863, b: 0.4764151, a: 1}
   m_Intensity: 2.5
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -18688,7 +18688,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.93693846, b: 0.5424528, a: 1}
+  m_Color: {r: 1, g: 0.77040863, b: 0.4764151, a: 1}
   m_Intensity: 2.5
   m_LightVolumeIntensity: 0.06
   m_LightVolumeIntensityEnabled: 0
@@ -18962,7 +18962,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.97155225, b: 0.6933962, a: 1}
+  m_Color: {r: 1, g: 0.77040863, b: 0.4764151, a: 1}
   m_Intensity: 2.5
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -19478,7 +19478,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.46
-  m_Color: {r: 1, g: 0.97155225, b: 0.6933962, a: 1}
+  m_Color: {r: 1, g: 0.77040863, b: 0.4764151, a: 1}
   m_Intensity: 2.5
   m_LightVolumeIntensity: 0.2
   m_LightVolumeIntensityEnabled: 0
@@ -19588,7 +19588,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.97155225, b: 0.6933962, a: 1}
+  m_Color: {r: 1, g: 0.77040863, b: 0.4764151, a: 1}
   m_Intensity: 2.5
   m_LightVolumeIntensity: 0.06
   m_LightVolumeIntensityEnabled: 0
@@ -19698,7 +19698,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.97155225, b: 0.6933962, a: 1}
+  m_Color: {r: 1, g: 0.7134811, b: 0.4198113, a: 1}
   m_Intensity: 2.5
   m_LightVolumeIntensity: 0.2
   m_LightVolumeIntensityEnabled: 0
@@ -19808,7 +19808,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.22312212, g: 0.33722392, b: 0.4339623, a: 1}
+  m_Color: {r: 0.22352941, g: 0.24262507, b: 0.43529412, a: 1}
   m_Intensity: 0.75
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -20437,7 +20437,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7502524738586254774, guid: 05358fc9dd4dcfb44861d7b57aed0ec6, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7502524738586254774, guid: 05358fc9dd4dcfb44861d7b57aed0ec6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20605,7 +20605,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9204866698617760928, guid: 4db753f4dc2faac45b064d5957b2e2e2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9204866698617760928, guid: 4db753f4dc2faac45b064d5957b2e2e2, type: 3}
       propertyPath: m_LocalScale.x
@@ -20935,7 +20935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5248958901052808355, guid: a04e9bde8c2c04349aec5956c04e8d97, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5248958901052808355, guid: a04e9bde8c2c04349aec5956c04e8d97, type: 3}
       propertyPath: m_LocalScale.x
@@ -22234,7 +22234,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.97155225, b: 0.6933962, a: 1}
+  m_Color: {r: 1, g: 0.77040863, b: 0.4764151, a: 1}
   m_Intensity: 2.5
   m_LightVolumeIntensity: 0.06
   m_LightVolumeIntensityEnabled: 0
@@ -22492,7 +22492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451752837637134121, guid: bdf88af738b637d4590d2f645732c37b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5451752837637134121, guid: bdf88af738b637d4590d2f645732c37b, type: 3}
       propertyPath: m_LocalScale.x
