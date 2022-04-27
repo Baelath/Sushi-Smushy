@@ -335,5 +335,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: -966673401, guid: 6b48801c3e201d947baf20d25aef5969, type: 3}
-  ticksToBreakMax: 10
+  ticksToBreakMax: 2
   ticksToRespawnMax: 15

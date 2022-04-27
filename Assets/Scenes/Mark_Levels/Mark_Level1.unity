@@ -856,6 +856,7 @@ GameObject:
   - component: {fileID: 920374788}
   - component: {fileID: 920374787}
   - component: {fileID: 920374786}
+  - component: {fileID: 920374790}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -988,6 +989,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &920374790
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920374785}
+  m_Enabled: 1
 --- !u!1001 &958571371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19599,7 +19608,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 0.27450982}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_Origin: {x: -5, y: -1, z: 0}
   m_Size: {x: 18, y: 16, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -19667,7 +19676,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.802444, y: 1}
+    m_SensorSize: {x: 2.3021681, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
