@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Sprites;
 using UnityEngine.Tilemaps;
 
@@ -33,11 +34,8 @@ public class DestructibleTiles : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         sr.sprite = sprite;
 
-        TimeTickSystem.OnTick += delegate (object sender, TimeTickSystem.OnTickEventArgs e)
-        {
-            BreakTile();
-            ResetTile();
-        };
+        TimeTickSystem.OnTick += BreakTile;
+        TimeTickSystem.OnTick += ResetTile;
 
         isBreaking = false;
         isRespawning = false;
@@ -51,7 +49,7 @@ public class DestructibleTiles : MonoBehaviour
         }
     }
 
-    private void ResetTile()
+    private void ResetTile(object sender, TimeTickSystem.OnTickEventArgs e)
     {
         if (isRespawning)
         {
@@ -73,7 +71,7 @@ public class DestructibleTiles : MonoBehaviour
         }
     }
 
-    private void BreakTile()
+    private void BreakTile(object sender, TimeTickSystem.OnTickEventArgs e)
     {
         if (isBreaking)
         {
@@ -90,5 +88,11 @@ public class DestructibleTiles : MonoBehaviour
 
             gameObject.SetActive(false);
         }
+    }
+
+    private void OnDestroy()
+    {
+        TimeTickSystem.OnTick -= BreakTile;
+        TimeTickSystem.OnTick -= ResetTile;
     }
 }
