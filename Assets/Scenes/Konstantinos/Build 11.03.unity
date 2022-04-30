@@ -8437,6 +8437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BouncePad
       objectReference: {fileID: 0}
+    - target: {fileID: 3516122082151615528, guid: 5b3846eb3353697409a1cfc3d67201c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3516122082151615530, guid: 5b3846eb3353697409a1cfc3d67201c6, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -8628,6 +8632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5248958901052808354, guid: a04e9bde8c2c04349aec5956c04e8d97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5248958901052808355, guid: a04e9bde8c2c04349aec5956c04e8d97, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -8688,6 +8696,10 @@ PrefabInstance:
     - target: {fileID: 5451752837637134120, guid: bdf88af738b637d4590d2f645732c37b, type: 3}
       propertyPath: m_Name
       value: Eggnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5451752837637134120, guid: bdf88af738b637d4590d2f645732c37b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5451752837637134121, guid: bdf88af738b637d4590d2f645732c37b, type: 3}
       propertyPath: m_RootOrder
@@ -8912,6 +8924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 9121350842952195355, guid: 194ebd87cef97d4449e3926f7ee096f6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194ebd87cef97d4449e3926f7ee096f6, type: 3}
 --- !u!1001 &9204866698073873608
@@ -8921,6 +8937,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2598097374368119169, guid: 4db753f4dc2faac45b064d5957b2e2e2, type: 3}
+      propertyPath: radius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9204866698617760928, guid: 4db753f4dc2faac45b064d5957b2e2e2, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -8968,6 +8988,10 @@ PrefabInstance:
     - target: {fileID: 9204866698617760943, guid: 4db753f4dc2faac45b064d5957b2e2e2, type: 3}
       propertyPath: m_Name
       value: Enemy_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204866698617760943, guid: 4db753f4dc2faac45b064d5957b2e2e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4db753f4dc2faac45b064d5957b2e2e2, type: 3}
