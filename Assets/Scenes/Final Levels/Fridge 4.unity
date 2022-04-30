@@ -3145,11 +3145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.065131
+      value: -7.06
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.6894245
+      value: -8.88
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6827,11 +6827,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.9038177
+      value: -7.9
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.678806
+      value: -8.87
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.z
@@ -38901,7 +38901,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6515837, y: 1}
+    m_SensorSize: {x: 1.8526077, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -43356,11 +43356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.263603
+      value: -6.26
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.69473
+      value: -8.89
       objectReference: {fileID: 0}
     - target: {fileID: 7555886741036327961, guid: dd7db30756cae5548aeb8447491f3927, type: 3}
       propertyPath: m_LocalPosition.z
