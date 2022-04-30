@@ -8,7 +8,11 @@ public static class SoundManager
     // todo: Add all sound triggers...
     public enum Sound
     {
-        PlayerJump
+        PlayerJump,
+        PlayerDash,
+        PlayerWallJump,
+        PlayerDeath,
+        CollectiblePickup
     }
 
     private static Dictionary<Sound, float> soundTimerDictionary;

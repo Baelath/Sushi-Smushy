@@ -89,6 +89,8 @@ MonoBehaviour:
   soundClipArray:
   - audioClip: {fileID: 8300000, guid: 2c834917fe60dbf47b63f8df2fc2f071, type: 3}
     sound: 0
+  - audioClip: {fileID: 8300000, guid: d87147f52d163dd43937a7e2850945a0, type: 3}
+    sound: 4
 --- !u!114 &1979510921349887299
 MonoBehaviour:
   m_ObjectHideFlags: 0
