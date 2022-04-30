@@ -24,7 +24,7 @@ public class PlayerRunState : PlayerGroundedState
 
 		if(InputHandler.instance.MoveInput.x == 0)
 		{
-			stateMachine.ChangeState(player.IdleState);
+			stateMachine.ChangeState(player.IdleState, 0);
 		}
 	}
 

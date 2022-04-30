@@ -27,19 +27,19 @@ public class PlayerInAirState : PlayerState
 
 		if (player.LastPressedDashTime > 0 && player.DashState.CanDash())
 		{
-			player.StateMachine.ChangeState(player.DashState);
+			player.StateMachine.ChangeState(player.DashState, 1);
 		}
 		else if (player.LastOnGroundTime > 0)
 		{
-			player.StateMachine.ChangeState(player.IdleState);
+			player.StateMachine.ChangeState(player.IdleState, 0);
 		}
 		else if(player.LastPressedJumpTime > 0 && player.LastOnWallTime > 0)
 		{
-			player.StateMachine.ChangeState(player.WallJumpState);
+			player.StateMachine.ChangeState(player.WallJumpState, 2);
 		}
 		else if ((player.LastOnWallLeftTime > 0 && InputHandler.instance.MoveInput.x < 0) || (player.LastOnWallRightTime > 0 && InputHandler.instance.MoveInput.x > 0))
 		{
-			player.StateMachine.ChangeState(player.WallSlideState);
+			player.StateMachine.ChangeState(player.WallSlideState, 3);
 		}
 		else if (player.RB.velocity.y < 0)
 		{

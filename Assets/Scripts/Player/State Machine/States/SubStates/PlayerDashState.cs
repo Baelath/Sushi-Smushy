@@ -44,9 +44,9 @@ public class PlayerDashState : PlayerUsingAbilityState
 		if(Time.time - startTime > data.dashAttackTime + data.dashEndTime) //dashTime over transition to another state
 		{
 			if (player.LastOnGroundTime > 0)
-				player.StateMachine.ChangeState(player.IdleState);
+				player.StateMachine.ChangeState(player.IdleState, 0);
 			else
-				player.StateMachine.ChangeState(player.InAirState);
+				player.StateMachine.ChangeState(player.InAirState, 3);
 		}
 	}
 

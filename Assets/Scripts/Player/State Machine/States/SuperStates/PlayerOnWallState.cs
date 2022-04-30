@@ -25,15 +25,15 @@ public class PlayerOnWallState : PlayerState
 
 		if (player.LastPressedDashTime > 0 && player.DashState.CanDash())
 		{
-			player.StateMachine.ChangeState(player.DashState);
+			player.StateMachine.ChangeState(player.DashState, 1);
 		}
 		else if (player.LastOnGroundTime > 0)
 		{
-			player.StateMachine.ChangeState(player.IdleState);
+			player.StateMachine.ChangeState(player.IdleState, 0);
 		}
 		else if(player.LastOnWallTime <= 0)
 		{
-			player.StateMachine.ChangeState(player.InAirState);
+			player.StateMachine.ChangeState(player.InAirState, 3);
 		}
 	}
 

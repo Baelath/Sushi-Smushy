@@ -669,7 +669,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 0.8, y: 0, z: 1}
+    m_Scale: {x: 0.8, y: 0.1, z: 1}
     placementMode: 1
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -867,7 +867,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 1000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4786,7 +4786,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.15
+  m_MaxParticleSize: 0.25
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -4950,10 +4950,10 @@ GameObject:
   - component: {fileID: 7502524738586254774}
   - component: {fileID: 7502524738586254768}
   - component: {fileID: 7502524738586254769}
-  - component: {fileID: 7502524738586254770}
   - component: {fileID: 7502524738586254771}
   - component: {fileID: 7502524738586254772}
   - component: {fileID: 7502524738586254773}
+  - component: {fileID: 6081280359875401467}
   m_Layer: 0
   m_Name: Salmon
   m_TagString: Player
@@ -5025,27 +5025,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &7502524738586254770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7502524738586254775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f05384088565354f9b44cf852667ba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: d974a7ea26c120b4382e82a04122f961, type: 2}
-  _groundCheckPoint: {fileID: 7502524736980424365}
-  _groundCheckSize: {x: 0.6, y: 0.04}
-  _frontWallCheckPoint: {fileID: 7502524737512487223}
-  _backWallCheckPoint: {fileID: 7502524737881894418}
-  _wallCheckSize: {x: 0.2, y: 0.3}
-  _groundLayer:
-    serializedVersion: 2
-    m_Bits: 320
 --- !u!95 &7502524738586254771
 Animator:
   serializedVersion: 4
@@ -5130,3 +5109,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adc321851ad0ee4b8d2c0957cb5f892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6081280359875401467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502524738586254775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f225853dae64a794085b51aa59a35257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: d974a7ea26c120b4382e82a04122f961, type: 2}
+  CurrentState: 
+  _groundCheckPoint: {fileID: 7502524736980424365}
+  _groundCheckSize: {x: 0.6, y: 0.04}
+  _frontWallCheckPoint: {fileID: 7502524737512487223}
+  _backWallCheckPoint: {fileID: 7502524737881894418}
+  _wallCheckSize: {x: 0.2, y: 0.3}
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 64

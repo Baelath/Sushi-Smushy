@@ -25,11 +25,11 @@ public class PlayerWallSlideState : PlayerOnWallState
 
 		if(player.LastPressedJumpTime > 0)
 		{
-			player.StateMachine.ChangeState(player.WallJumpState);
+			player.StateMachine.ChangeState(player.WallJumpState, 2);
 		}
 		else if((player.LastOnWallLeftTime > 0 && InputHandler.instance.MoveInput.x >= 0) || (player.LastOnWallRightTime > 0 && InputHandler.instance.MoveInput.x <= 0))
 		{
-			player.StateMachine.ChangeState(player.InAirState);
+			player.StateMachine.ChangeState(player.InAirState, 3);
 		}
 	}
 
