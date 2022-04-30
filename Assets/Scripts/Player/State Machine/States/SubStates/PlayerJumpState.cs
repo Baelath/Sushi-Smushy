@@ -26,15 +26,15 @@ public class PlayerJumpState : PlayerUsingAbilityState
 
 		if (player.LastPressedDashTime > 0 && player.DashState.CanDash())
 		{
-			player.StateMachine.ChangeState(player.DashState);
+			player.StateMachine.ChangeState(player.DashState, 1);
 		}
 		else if (player.LastPressedJumpTime > 0 && player.LastOnWallTime > 0)
 		{
-			player.StateMachine.ChangeState(player.WallJumpState);
+			player.StateMachine.ChangeState(player.WallJumpState, 2);
 		}
 		else if (player.RB.velocity.y <= 0) //Jump performed, change state
 		{
-			player.StateMachine.ChangeState(player.InAirState);
+			player.StateMachine.ChangeState(player.InAirState, 3);
 		}
 	}
 

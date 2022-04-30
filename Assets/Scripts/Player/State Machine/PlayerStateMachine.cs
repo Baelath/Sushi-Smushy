@@ -50,6 +50,8 @@ public class PlayerStateMachine : MonoBehaviour
 	[SerializeField] private LayerMask _groundLayer;
 	#endregion
 
+	private ParticleSystem dust;
+
 	private void Awake()
 	{
 		#region STATE MACHINE
@@ -79,6 +81,8 @@ public class PlayerStateMachine : MonoBehaviour
 
 		SetGravityScale(data.gravityScale);
 		IsFacingRight = true;
+
+		dust = GetComponentInChildren<ParticleSystem>();
 	}
 
 	private void Update()
@@ -209,6 +213,7 @@ public class PlayerStateMachine : MonoBehaviour
 		transform.localScale = scale;
 
 		IsFacingRight = !IsFacingRight;
+		CreateDust();
 	}
 
 	public void Jump()
@@ -224,6 +229,8 @@ public class PlayerStateMachine : MonoBehaviour
 
 		RB.AddForce(Vector2.up * adjustedJumpForce, ForceMode2D.Impulse);
 		#endregion
+		CreateDust();
+		SoundManager.PlaySound(SoundManager.Sound.PlayerJump);
 	}
 
 	public void WallJump(int dir)
@@ -245,7 +252,8 @@ public class PlayerStateMachine : MonoBehaviour
 			force.y -= RB.velocity.y;
 
 		RB.AddForce(force, ForceMode2D.Impulse);
-        #endregion
+		#endregion
+		CreateDust();
     }
 
     private void JumpCut()
@@ -285,4 +293,10 @@ public class PlayerStateMachine : MonoBehaviour
 	}
 
 	#endregion
+
+	private void CreateDust()
+	{
+		if (CurrentState != "PlayerInAirState")
+			dust.Play();
+	}
 }

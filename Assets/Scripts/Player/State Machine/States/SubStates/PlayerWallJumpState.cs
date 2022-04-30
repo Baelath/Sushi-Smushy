@@ -29,19 +29,19 @@ public class PlayerWallJumpState : PlayerUsingAbilityState
 
 		if (player.LastPressedDashTime > 0 && player.DashState.CanDash())
 		{
-			player.StateMachine.ChangeState(player.DashState);
+			player.StateMachine.ChangeState(player.DashState, 1);
 		}
 		else if (player.LastOnGroundTime > 0) //Jump performed, change state
 		{
-			player.StateMachine.ChangeState(player.IdleState);
+			player.StateMachine.ChangeState(player.IdleState, 0);
 		}
 		else if(player.LastPressedJumpTime > 0 && ((player.LastOnWallRightTime > 0 && jumpDir == 1) || (player.LastOnWallLeftTime > 0 && jumpDir == -1)))
         {
-			player.StateMachine.ChangeState(player.WallJumpState);
+			player.StateMachine.ChangeState(player.WallJumpState, 2);
 		}
 		else if (Time.time - startTime > data.wallJumpTime) //Jump performed, change state
 		{
-			player.StateMachine.ChangeState(player.InAirState);
+			player.StateMachine.ChangeState(player.InAirState, 3);
 		}
 
 		if ((InputHandler.instance.MoveInput.x != 0))
