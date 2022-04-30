@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 2
+  idle: {fileID: 2133770473, guid: 77fb02e68ccd6a04fa44251b6c659e87, type: 3}
 --- !u!70 &6252667784309560557
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

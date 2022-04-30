@@ -12,7 +12,11 @@ public static class SoundManager
         PlayerDash,
         PlayerWallJump,
         PlayerDeath,
-        CollectiblePickup
+        CollectiblePickup,
+        TileBreak,
+        ButtonHover,
+        ButtonPress,
+        MainMenu
     }
 
     private static Dictionary<Sound, float> soundTimerDictionary;
@@ -24,7 +28,6 @@ public static class SoundManager
     private static float oneShotVolume;
 
 
-    // dont forget to call this somewhere in an Awake()...
     public static void Initialize()
     {
         soundTimerDictionary = new Dictionary<Sound, float>();
@@ -77,6 +80,11 @@ public static class SoundManager
         musicAudioSource.loop = true;
         musicAudioSource.clip = GetAudioClip(sound);
         musicAudioSource.Play();
+    }
+
+    public static void StopBackgroundMusic()
+    {
+        musicAudioSource?.Stop();
     }
 
     private static bool CanPlaySound(Sound sound)

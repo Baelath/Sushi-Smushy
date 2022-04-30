@@ -12,7 +12,6 @@ public class EnemyProximity : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
-        anim.enabled = false;
 
         GetComponent<CircleCollider2D>().radius = radius;
     }
@@ -20,12 +19,14 @@ public class EnemyProximity : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-            anim.enabled = true;
+            anim.SetBool("inRange", true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-            anim.enabled = false;
+        {
+            anim.SetBool("inRange", false);
+        }
     }
 }

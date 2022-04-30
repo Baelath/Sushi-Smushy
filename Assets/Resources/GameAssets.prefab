@@ -10,10 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2753451927473108659}
   - component: {fileID: 2753451927473108658}
-  - component: {fileID: 2753451927473108668}
   - component: {fileID: 2753451927473108669}
   - component: {fileID: 1979510921349887299}
-  - component: {fileID: 5712109528685263158}
   m_Layer: 0
   m_Name: GameAssets
   m_TagString: Untagged
@@ -48,32 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0054eaee21dec9845bcd414514ffb1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2753451927473108668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2753451927473108657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1425fc81bd108ce4c8310ba72cfbdc6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  options:
-  - name: Players
-    objects:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    currentObj: 0
-    changeObjKey: 49
-  - name: Levels
-    objects:
-    - {fileID: 0}
-    - {fileID: 0}
-    currentObj: 0
-    changeObjKey: 50
 --- !u!114 &2753451927473108669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +63,12 @@ MonoBehaviour:
     sound: 0
   - audioClip: {fileID: 8300000, guid: d87147f52d163dd43937a7e2850945a0, type: 3}
     sound: 4
+  - audioClip: {fileID: 8300000, guid: 6d5dcac78b157e7438542ac9abd05346, type: 3}
+    sound: 8
+  - audioClip: {fileID: 8300000, guid: 4e0c00e43a675c840a1cdd02d23c3298, type: 3}
+    sound: 6
+  - audioClip: {fileID: 8300000, guid: 1a2368b2c6ea80044b654f471cd7bdf6, type: 3}
+    sound: 7
 --- !u!114 &1979510921349887299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,17 +79,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9daf0571cc9951b48af929a6acbfc8b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5712109528685263158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2753451927473108657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b365a50dc17c73448b793495bf41cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -16,7 +16,6 @@ public class GameAssets : MonoBehaviour
         }
     }
 
-    //public GameObject playerPrefab;
     public SoundClip[] soundClipArray;
 
     public int GetRandomPercent()
@@ -31,7 +30,11 @@ public class GameAssets : MonoBehaviour
         public SoundManager.Sound sound;
     }
 
-    // TESTING...
+    private void Awake()
+    {
+        //DontDestroyOnLoad(gameObject);
+    }
+
     private void Start()
     {
         SoundManager.Initialize();

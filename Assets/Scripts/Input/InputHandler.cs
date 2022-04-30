@@ -45,6 +45,8 @@ public class InputHandler : MonoBehaviour
 
 		controls.Player.Climb.performed += ctx => ClimbInput = ctx.ReadValue<float>();
 		controls.Player.Climb.canceled += ctx => ClimbInput = 0;
+
+		controls.Enable();
 		#endregion
 	}
 
@@ -56,15 +58,15 @@ public class InputHandler : MonoBehaviour
 	#endregion
 
 	#region OnEnable/OnDisable
-	private void OnEnable()
-	{
-		controls.Enable();
-	}
+	//private void OnEnable()
+	//{
+	//	controls.Enable();
+	//}
 
-	private void OnDisable()
-	{
-		controls.Disable();
-	}
+	//private void OnDisable()
+	//{
+	//	controls.Disable();
+	//}
 	#endregion
 }
 

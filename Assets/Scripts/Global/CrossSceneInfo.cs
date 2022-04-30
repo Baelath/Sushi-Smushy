@@ -4,24 +4,6 @@ using UnityEngine;
 
 public static class CrossSceneInfo
 {
-    public static int sceneToLoad
-    {
-        get;
-        set;
-    }
-
-    public static string fileToLoad
-    {
-        get;
-        set;
-    }
-
-    public static bool load
-    {
-        get;
-        set;
-    }
-
     public static float oneShotVolume
     {
         get;
@@ -34,6 +16,29 @@ public static class CrossSceneInfo
         set;
     } = 1f;
 
-    // remember to set to level start on scene change...
-    public static Vector3 lastSavedPos;
+    public static bool showContinueButton = false;
+
+    public struct LevelState 
+    {
+        public int index;
+        public bool unlocked;
+        public bool collected;
+        public int collectiblesMax;
+    }
+
+    public static LevelState[] levels;
+
+    public static void Reset()
+    {
+        levels = new LevelState[5];
+
+        for(int i = 0; i < levels.Length; i++)
+        {
+            levels[i].index = i;
+            levels[i].unlocked = false;
+            levels[i].collected = false;
+            
+            //get max collectibles per level and pass in later...
+        }
+    }
 }

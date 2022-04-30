@@ -23,7 +23,7 @@ public class PlayerIdleState : PlayerGroundedState
 	{
 		base.LogicUpdate();
 
-		if(InputHandler.instance.MoveInput.x != 0) //change state to runnig, when moveInput detected
+		if(InputHandler.instance.MoveInput.x != 0) //change state to running, when moveInput detected
 		{
 			stateMachine.ChangeState(player.RunState, 1);
 		}

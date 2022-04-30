@@ -217,3 +217,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 2
+  idle: {fileID: -1578593368, guid: f27430872c2dc2b46b3a02b355199c48, type: 3}

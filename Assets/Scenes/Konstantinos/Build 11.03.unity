@@ -8242,6 +8242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Club
       objectReference: {fileID: 0}
+    - target: {fileID: 1485798560410682448, guid: f1abb6242ec267a47a40d4036a675039, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1485798560410682449, guid: f1abb6242ec267a47a40d4036a675039, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -8743,7 +8747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451752837637134120, guid: bdf88af738b637d4590d2f645732c37b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451752837637134121, guid: bdf88af738b637d4590d2f645732c37b, type: 3}
       propertyPath: m_RootOrder
