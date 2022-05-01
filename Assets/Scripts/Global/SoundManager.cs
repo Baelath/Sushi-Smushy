@@ -12,11 +12,21 @@ public static class SoundManager
         PlayerDash,
         PlayerWallJump,
         PlayerDeath,
-        CollectiblePickup,
+        Pickup,
         TileBreak,
         ButtonHover,
         ButtonPress,
-        MainMenu
+        MainMenu,
+        Level1,
+        Level2,
+        Level3,
+        Level4,
+        Level5,
+        Level6,
+        Level7,
+        Level8,
+        Level9,
+        Level10
     }
 
     private static Dictionary<Sound, float> soundTimerDictionary;
@@ -31,7 +41,10 @@ public static class SoundManager
     public static void Initialize()
     {
         soundTimerDictionary = new Dictionary<Sound, float>();
-        soundTimerDictionary[Sound.PlayerJump] = 0f;
+        soundTimerDictionary[Sound.PlayerJump] = 0.2f;
+        soundTimerDictionary[Sound.ButtonHover] = 0.5f;
+        soundTimerDictionary[Sound.ButtonPress] = 0f;
+        soundTimerDictionary[Sound.PlayerWallJump] = 0.2f;
     }
 
     // 3D sound (falloff etc)...
@@ -78,8 +91,12 @@ public static class SoundManager
         }
         musicAudioSource.volume = CrossSceneInfo.musicVolume;
         musicAudioSource.loop = true;
-        musicAudioSource.clip = GetAudioClip(sound);
-        musicAudioSource.Play();
+
+        if (musicAudioSource.clip != GetAudioClip(sound))
+        {
+            musicAudioSource.clip = GetAudioClip(sound);
+            musicAudioSource.Play();
+        }
     }
 
     public static void StopBackgroundMusic()

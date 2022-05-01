@@ -5109,6 +5109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adc321851ad0ee4b8d2c0957cb5f892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathScreen: {fileID: 0}
+  collectiblesGathered: 0
 --- !u!114 &6081280359875401467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5124,7 +5126,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: d974a7ea26c120b4382e82a04122f961, type: 2}
   CurrentState: 
   _groundCheckPoint: {fileID: 7502524736980424365}
-  _groundCheckSize: {x: 0.6, y: 0.04}
+  _groundCheckSize: {x: 0.5, y: 0.04}
   _frontWallCheckPoint: {fileID: 7502524737512487223}
   _backWallCheckPoint: {fileID: 7502524737881894418}
   _wallCheckSize: {x: 0.2, y: 0.3}

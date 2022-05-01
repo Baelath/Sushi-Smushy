@@ -30,6 +30,7 @@ public class PlayerLife : MonoBehaviour
     private void Die()
     {
         rb.bodyType = RigidbodyType2D.Static;
+        SoundManager.PlaySound(SoundManager.Sound.PlayerDeath);
         anim.SetTrigger("death");
     }
 

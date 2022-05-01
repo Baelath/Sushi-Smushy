@@ -10,6 +10,8 @@ public class Cutscene : MonoBehaviour
 
     private void Start()
     {
+        SoundManager.StopBackgroundMusic();
+
         player = GetComponent<VideoPlayer>();
         player.SetDirectAudioVolume(0, CrossSceneInfo.musicVolume);
         Debug.Log(CrossSceneInfo.musicVolume);
@@ -22,12 +24,12 @@ public class Cutscene : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F4))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     private void StartGame(UnityEngine.Video.VideoPlayer vp)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     private void OnDestroy()

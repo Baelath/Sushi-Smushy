@@ -23,7 +23,7 @@ public class LevelSelect : MonoBehaviour
         }
     }
 
-    public void Clicked(int index)
+    public void LevelSelected(int index)
     {
         SoundManager.PlaySound(SoundManager.Sound.ButtonPress);
         SceneManager.LoadScene(index);

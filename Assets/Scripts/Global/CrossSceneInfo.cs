@@ -6,17 +6,16 @@ public static class CrossSceneInfo
 {
     private static Dictionary<int, int> collectibleDict = new Dictionary<int, int> 
     { 
-        {0 , 1},
-        {1 , 1},
-        {2 , 1},
-        {3 , 1},
-        {4 , 1},
-        {5 , 1},
+        {0 , 0},
+        {1 , 5},
+        {2 , 8},
+        {3 , 8},
+        {4 , 5},
+        {5 , 4},
         {6 , 1},
-        {7 , 1},
+        {7 , 2},
         {8 , 1},
-        {9 , 1},
-        {10 , 1}
+        {9 , 1}
     };
 
 
@@ -49,7 +48,7 @@ public static class CrossSceneInfo
 
         for(int i = 0; i < levels.Length; i++)
         {
-            levels[i].index = i;
+            levels[i].index = i + 4;
             levels[i].unlocked = false;
             levels[i].collected = false;
         }

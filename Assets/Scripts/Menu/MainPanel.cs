@@ -14,7 +14,9 @@ public class MainPanel : MonoBehaviour
         if (CrossSceneInfo.showContinueButton)
             continueButton.gameObject.SetActive(true);
 
-        SoundManager.PlayBackgroundMusic(SoundManager.Sound.MainMenu);
+        //SoundManager.PlayBackgroundMusic(SoundManager.Sound.MainMenu);
+
+        DontDestroyOnLoad(GameObject.Find("Background Music"));
     }
 
     public void Close()
@@ -40,8 +42,8 @@ public class MainPanel : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void ContinueGame(int index)
+    public void ContinueGame()
     {
-        SceneManager.LoadScene(index);
+        SceneManager.LoadScene(3);
     }
 }

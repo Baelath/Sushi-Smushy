@@ -81,7 +81,8 @@ public class DestructibleTiles : MonoBehaviour
 
         if (ticksToBreak <= 0)
         {
-            //Play Break animation
+            if (!isRespawning && isBreaking)
+                SoundManager.PlaySound(SoundManager.Sound.TileBreak);
 
             isRespawning = true;
             isBreaking = false;

@@ -13,10 +13,13 @@ public class LevelEnd : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerLife player = collision.gameObject.GetComponent<PlayerLife>();
-            CrossSceneInfo.levels[index].unlocked = true;
-            CrossSceneInfo.CheckCollectible(player.collectiblesGathered, index - 1);
 
-            SceneManager.LoadScene(4);
+            if (index != 14)
+                CrossSceneInfo.levels[index - 4].unlocked = true;
+            
+            CrossSceneInfo.CheckCollectible(player.collectiblesGathered, index - 5);
+
+            SceneManager.LoadScene(index);
         }
     }
 }

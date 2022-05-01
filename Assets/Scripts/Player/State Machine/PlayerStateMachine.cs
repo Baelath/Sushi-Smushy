@@ -253,6 +253,7 @@ public class PlayerStateMachine : MonoBehaviour
 
 		RB.AddForce(force, ForceMode2D.Impulse);
 		#endregion
+		SoundManager.PlaySound(SoundManager.Sound.PlayerWallJump);
 		CreateDust();
     }
 
@@ -280,6 +281,8 @@ public class PlayerStateMachine : MonoBehaviour
 		RB.velocity = dir.normalized * data.dashSpeed;
 
 		SetGravityScale(0);
+
+		SoundManager.PlaySound(SoundManager.Sound.PlayerDash);
 	}
 
 	#endregion
