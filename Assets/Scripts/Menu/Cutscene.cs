@@ -15,6 +15,8 @@ public class Cutscene : MonoBehaviour
         Debug.Log(CrossSceneInfo.musicVolume);
 
         player.loopPointReached += StartGame;
+
+        CrossSceneInfo.levels[0].unlocked = true;
     }
 
     private void Update()

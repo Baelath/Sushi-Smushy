@@ -40,8 +40,8 @@ public class MainPanel : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void ContinueGame()
+    public void ContinueGame(int index)
     {
-        //load level select...
+        SceneManager.LoadScene(index);
     }
 }

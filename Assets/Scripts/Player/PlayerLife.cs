@@ -8,6 +8,11 @@ public class PlayerLife : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
 
+    [SerializeField]
+    private DeathScreen deathScreen;
+
+    public int collectiblesGathered = 0;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,8 +33,8 @@ public class PlayerLife : MonoBehaviour
         anim.SetTrigger("death");
     }
 
-    private void RestartLevel()
+    public void ShowScreen()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        deathScreen.ShowDeathScreen();
     }
 }

@@ -151,7 +151,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1
-    functionName: RestartLevel
+    functionName: ShowScreen
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: 4adc321851ad0ee4b8d2c0957cb5f892, type: 3}
     floatParameter: 0

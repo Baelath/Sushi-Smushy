@@ -4,6 +4,22 @@ using UnityEngine;
 
 public static class CrossSceneInfo
 {
+    private static Dictionary<int, int> collectibleDict = new Dictionary<int, int> 
+    { 
+        {0 , 1},
+        {1 , 1},
+        {2 , 1},
+        {3 , 1},
+        {4 , 1},
+        {5 , 1},
+        {6 , 1},
+        {7 , 1},
+        {8 , 1},
+        {9 , 1},
+        {10 , 1}
+    };
+
+
     public static float oneShotVolume
     {
         get;
@@ -23,22 +39,27 @@ public static class CrossSceneInfo
         public int index;
         public bool unlocked;
         public bool collected;
-        public int collectiblesMax;
     }
 
     public static LevelState[] levels;
 
     public static void Reset()
     {
-        levels = new LevelState[5];
+        levels = new LevelState[11];
 
         for(int i = 0; i < levels.Length; i++)
         {
             levels[i].index = i;
             levels[i].unlocked = false;
             levels[i].collected = false;
-            
-            //get max collectibles per level and pass in later...
+        }
+    }
+
+    public static void CheckCollectible(int amount, int levelIndex)
+    {
+        if (collectibleDict[levelIndex] <= amount)
+        {
+            levels[levelIndex].collected = true;
         }
     }
 }

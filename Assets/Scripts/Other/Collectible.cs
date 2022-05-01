@@ -8,7 +8,8 @@ public class Collectible : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //Get collected...
+            PlayerLife player = collision.gameObject.GetComponent<PlayerLife>();
+            player.collectiblesGathered++;
             SoundManager.PlaySound(SoundManager.Sound.CollectiblePickup);
             gameObject.SetActive(false);
         }
