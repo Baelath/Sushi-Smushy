@@ -407,7 +407,7 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 24.899822
+  m_PointLightInnerAngle: 42.44
   m_PointLightOuterAngle: 78.422745
   m_PointLightInnerRadius: 0
   m_PointLightOuterRadius: 12.629038
@@ -17737,10 +17737,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 24.899822
-  m_PointLightOuterAngle: 78.422745
+  m_PointLightInnerAngle: 45.98
+  m_PointLightOuterAngle: 104.25
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 11.74757
+  m_PointLightOuterRadius: 8.49458
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -17758,7 +17758,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877161452}
-  m_LocalRotation: {x: -0, y: -0, z: 0.99926174, w: 0.03841859}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9999886, w: 0.004780254}
   m_LocalPosition: {x: -97.273674, y: 48.086052, z: 0.21775854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -17908,10 +17908,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 24.899822
+  m_PointLightInnerAngle: 37.82
   m_PointLightOuterAngle: 78.422745
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 12.9824295
+  m_PointLightOuterRadius: 11.361942
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -17929,7 +17929,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945655627}
-  m_LocalRotation: {x: -0, y: -0, z: 0.999986, w: 0.0052924766}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9999817, w: 0.006048822}
   m_LocalPosition: {x: -98.243675, y: 57.996056, z: 0.21775854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
